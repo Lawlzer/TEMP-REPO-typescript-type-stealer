@@ -54,7 +54,7 @@ function recursiveSaveInterfaces(checker: ts.TypeChecker, interfaceDeclaration: 
 	console.log('interfaceName: ', interfaceName);
 	if (interfaceName === 'two') { 
 		console.log('\ninterface two debug: ', interfaceDeclaration); 
-		// from here, how do we get the [key: string]: Hello2; part? Since we are referencing an outside interface, we can't just use the .getText() method.
+		// from here, how do we get the [key: string]: Hello2; part? It's not an interfaceMember...
 		// process.exit(); 
 	}
 	
